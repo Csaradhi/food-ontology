@@ -1,0 +1,1119 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="#Texture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit08"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Seeds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeedType01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colour"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OuterLayer02"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Protiens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit05"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasSeeds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color10"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Components"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Contains"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SeedType02"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fruits"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color05"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sodium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color01"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Fat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit02"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InnerLayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit06"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OuterLayer04"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#FruitName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cholestrol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color08"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Carbohydrate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OuterLayer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Color04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fruit07"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Content"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ColourName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OuterLayer05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OuterLayer01"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Potassium"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Colour"/>
+        <Class IRI="#Fruits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Content"/>
+        <Class IRI="#Fruits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InnerLayer"/>
+        <Class IRI="#Fruits"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OuterLayer"/>
+        <Class IRI="#Fruits"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Color10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fruits"/>
+        <NamedIndividual IRI="#Fruit10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InnerLayer"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InnerLayer"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OuterLayer"/>
+        <NamedIndividual IRI="#OuterLayer01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OuterLayer"/>
+        <NamedIndividual IRI="#OuterLayer02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OuterLayer"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OuterLayer"/>
+        <NamedIndividual IRI="#OuterLayer04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OuterLayer"/>
+        <NamedIndividual IRI="#OuterLayer05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InnerLayer"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InnerLayer"/>
+        <NamedIndividual IRI="#SeedType02"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <NamedIndividual IRI="#SeedType02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <NamedIndividual IRI="#Color03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <NamedIndividual IRI="#Color01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <NamedIndividual IRI="#Color03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <NamedIndividual IRI="#SeedType02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <NamedIndividual IRI="#Color07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <NamedIndividual IRI="#Color07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <NamedIndividual IRI="#SeedType02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <NamedIndividual IRI="#SeedType02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <NamedIndividual IRI="#OuterLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <NamedIndividual IRI="#Color05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <NamedIndividual IRI="#Color04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <NamedIndividual IRI="#OuterLayer05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <NamedIndividual IRI="#OuterLayer04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <NamedIndividual IRI="#SeedType01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <NamedIndividual IRI="#Color08"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <NamedIndividual IRI="#Color05"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <NamedIndividual IRI="#OuterLayer01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <NamedIndividual IRI="#Color02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <NamedIndividual IRI="#Color05"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Red</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Yellow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">White</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pink</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Brown</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Blue</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Orange</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Green</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color09"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Black</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ColourName"/>
+        <NamedIndividual IRI="#Color10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Purple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">14 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Apple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">107 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.3 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">23 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.3 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Banana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">358 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1.1 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">12 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.1 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Orange</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">181 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.9 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">15 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.4 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Mango</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">168 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.8 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">1 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">17g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.4 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Grapes</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">191 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.6 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">23 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.7 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">PassionFruit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">348 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">2.2 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">28 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">8 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Watermelon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">112 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.6g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit07"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">8 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.2 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Muskmelon</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">267 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">0.8 g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">16 mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">15g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.5g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Kiwi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">312mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1.1g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit09"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">3mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Carbohydrate"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">13g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cholestrol"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Fat"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.1g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#FruitName"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Pineapple</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Potassium"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">109mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Protiens"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0.5g</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sodium"/>
+        <NamedIndividual IRI="#Fruit10"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">1mg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#InnerLayer01"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Crunchy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#InnerLayer02"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Soft</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#OuterLayer01"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Prickly</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#OuterLayer02"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ribbed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#OuterLayer03"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Smooth</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#OuterLayer04"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Furry</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Texture"/>
+        <NamedIndividual IRI="#OuterLayer05"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Rough</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Seeds"/>
+        <NamedIndividual IRI="#SeedType01"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Edible</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Seeds"/>
+        <NamedIndividual IRI="#SeedType02"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Not Edible</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Components"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Contains"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <Class IRI="#Fruits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Components"/>
+        <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Components"/>
+        <Class IRI="#InnerLayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Contains"/>
+        <Class IRI="#Content"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#FeelsLikeInside"/>
+        <Class IRI="#InnerLayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#FeelsLikeOutside"/>
+        <Class IRI="#OuterLayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasSeeds"/>
+        <Class IRI="#InnerLayer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LooksLikeInside"/>
+        <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LooksLikeOutside"/>
+        <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Carbohydrate"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cholestrol"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ColourName"/>
+        <Class IRI="#Colour"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Fat"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#FruitName"/>
+        <Class IRI="#Fruits"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Potassium"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Protiens"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Sodium"/>
+        <Class IRI="#Content"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Carbohydrate"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Cholestrol"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ColourName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Fat"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#FruitName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Potassium"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Protiens"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Sodium"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

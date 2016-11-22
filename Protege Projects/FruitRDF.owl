@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"
+     xml:base="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Components -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Components">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Contains">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FeelsLikeInside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FeelsLikeInside">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FeelsLikeOutside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FeelsLikeOutside">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#HasSeeds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#HasSeeds">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#LooksLikeInside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#LooksLikeInside">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#LooksLikeOutside -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#LooksLikeOutside">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Carbohydrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Carbohydrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Cholestrol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Cholestrol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#ColourName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#ColourName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FruitName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#FruitName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Potassium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Potassium">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Protiens -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Protiens">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Seeds -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Seeds"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Sodium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Sodium">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Texture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Texture"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Content">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Red</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yellow</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">White</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pink</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blue</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Black</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Colour"/>
+        <ColourName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple</ColourName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color03"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color01"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Apple</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">107 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3 mg</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color03"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.3 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Banana</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">358 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.1 g</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color07"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color07"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.1 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orange</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">181 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.9 mg</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mango</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">168 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8 g</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08"/>
+        <Carbohydrate>17g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.4 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grapes</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">191 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.6 g</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit06">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer01"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color05"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">23 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.7 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PassionFruit</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">348 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.2 g</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit07 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit07">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color04"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Watermelon</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">112 mg</Potassium>
+        <Protiens>0.6g</Protiens>
+        <Sodium>1mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit08 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit08">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer05"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08"/>
+        <Carbohydrate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8 g</Carbohydrate>
+        <Cholestrol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0 mg</Cholestrol>
+        <Fat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.2 g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muskmelon</FruitName>
+        <Potassium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">267 mg</Potassium>
+        <Protiens rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0.8 g</Protiens>
+        <Sodium rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit09">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer04"/>
+        <HasSeeds rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color08"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color05"/>
+        <Carbohydrate>15g</Carbohydrate>
+        <Cholestrol>0mg</Cholestrol>
+        <Fat>0.5g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kiwi</FruitName>
+        <Potassium>312mg</Potassium>
+        <Protiens>1.1g</Protiens>
+        <Sodium>3mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruit10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Fruits"/>
+        <FeelsLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01"/>
+        <FeelsLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer01"/>
+        <LooksLikeInside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color02"/>
+        <LooksLikeOutside rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#Color05"/>
+        <Carbohydrate>13g</Carbohydrate>
+        <Cholestrol>0mg</Cholestrol>
+        <Fat>0.1g</Fat>
+        <FruitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pineapple</FruitName>
+        <Potassium>109mg</Potassium>
+        <Protiens>0.5g</Protiens>
+        <Sodium>1mg</Sodium>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+        <Texture>Crunchy</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+        <Texture>Soft</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+        <Texture>Prickly</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+        <Texture>Ribbed</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer03">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+        <Texture>Smooth</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer04">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+        <Texture>Furry</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer05">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#OuterLayer"/>
+        <Texture>Rough</Texture>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+        <Seeds>Edible</Seeds>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#SeedType02">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#InnerLayer"/>
+        <Seeds>Not Edible</Seeds>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+

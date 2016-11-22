@@ -1,0 +1,86 @@
+CMD COMMAND FOR RUNNING APACHE
+java -Xmx1200M -jar fuseki-server.jar --update --loc=Data /FruitOWL.owl
+
+LISTS ALL THE DETAILS OF THE ONTOLOGY
+SELECT *
+WHERE  {
+	?a ?b ?c
+}
+
+LISTS ALL THE CLASSES PRESENT IN THE ONTOLOGY
+SELECT ?z 
+WHERE  {
+?z a owl:Class .
+}
+
+LISTS ALL THE INDIVIDUALS OF THE CLASSES
+SELECT ?z ?a
+WHERE  {
+  ?x rdf:type owl:Class . \\Selecting the type as class
+  ?z rdf:type ?x . \\selecting the individuals that come under ?x
+}
+
+LISTS ALL THE OBJECT PROPERTIES
+SELECT ?x
+WHERE  {
+  
+  ?x rdf:type owl:ObjectProperty .
+}
+
+how to list all literals using sparql
+http://stackoverflow.com/questions/39497399/how-to-extract-rdf-literals-via-sparql-query
+
+http://www.slideshare.net/LeeFeigenbaum/sparql-cheat-sheet
+
+LIST ALL LITERALS
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c)
+}
+
+LIST ONLY "RED"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c)
+  filter ( regex(?c, "Red"))
+}
+
+how to check for a particular literal in sparql
+http://stackoverflow.com/questions/21701832/extract-triples-containing-particular-substring-using-sparql
+
+LIST ONLY "RED" WITH IT'S DETAILS
+SELECT *
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c) 
+  filter ( regex(?c, "Red"))
+}
+
+TO SHOW THAT FRUIT'S URI THAT IS OF "COLOR01" (EITHER INSIDE OR OUTSIDE)
+SELECT *
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?c), "Color01")) //str(?c) will convert the uri to string
+}
+
+LIST ALL THE DETAILS OF "FRUIT01"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c .
+  filter ( regex(str(?a), "Fruit01")) .
+  filter isLiteral(?c)
+}
+
+TO SHOW THE NAME OF "FRUIT01"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c .
+  filter ( regex(str(?a), "Fruit01")) .
+  filter isLiteral(?c)
+  filter ( regex(str(?b), "FruitName"))
+}
+
+
+http://stackoverflow.com/questions/28282463/how-the-pass-the-output-of-one-sparql-query-as-a-input-to-another-sparql-query

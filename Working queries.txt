@@ -1,0 +1,663 @@
+CMD COMMAND FOR RUNNING APACHE
+java -Xmx1200M -jar fuseki-server.jar --update --loc=Data /FruitOWL.owl
+
+LISTS ALL THE DETAILS OF THE ONTOLOGY
+SELECT *
+WHERE  {
+	?a ?b ?c
+}
+
+LISTS ALL THE CLASSES PRESENT IN THE ONTOLOGY
+SELECT ?z 
+WHERE  {
+?z a owl:Class .
+}
+
+LISTS ALL THE INDIVIDUALS OF THE CLASSES
+SELECT ?z ?a
+WHERE  {
+  ?x rdf:type owl:Class . \\Selecting the type as class
+  ?z rdf:type ?x . \\selecting the individuals that come under ?x
+}
+
+LISTS ALL THE OBJECT PROPERTIES
+SELECT ?x
+WHERE  {
+  
+  ?x rdf:type owl:ObjectProperty .
+}
+
+how to list all literals using sparql
+http://stackoverflow.com/questions/39497399/how-to-extract-rdf-literals-via-sparql-query
+
+http://www.slideshare.net/LeeFeigenbaum/sparql-cheat-sheet
+
+LIST ALL LITERALS
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c)
+}
+
+LIST ONLY "RED"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c)
+  filter ( regex(?c, "Red"))
+}
+
+how to check for a particular literal in sparql
+http://stackoverflow.com/questions/21701832/extract-triples-containing-particular-substring-using-sparql
+
+LIST ONLY "RED" WITH IT'S URI DETAILS
+SELECT *
+WHERE  {  
+  ?a ?b ?c
+  filter isLiteral(?c) 
+  filter ( regex(?c, "Red"))
+}
+
+TO SHOW THAT FRUIT'S URI THAT IS OF "COLOR01" (EITHER INSIDE OR OUTSIDE)
+SELECT *
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?c), "Color01")) //str(?c) will convert the uri to string
+}
+
+LIST ONLY THE VALUES OF THE DETAILS OF "FRUIT01"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c .
+  filter ( regex(str(?a), "Fruit01")) .
+  filter isLiteral(?c)
+}
+
+TO SHOW THE NAME OF "FRUIT01"
+SELECT ?c
+WHERE  {  
+  ?a ?b ?c .
+  filter ( regex(str(?a), "Fruit01")) .
+  filter isLiteral(?c)
+  filter ( regex(str(?b), "FruitName"))
+}
+
+
+http://stackoverflow.com/questions/28282463/how-the-pass-the-output-of-one-sparql-query-as-a-input-to-another-sparql-query
+
+TO DISPLAY FRUIT NAME OF FRUIT01 AS APPLE
+SELECT ?x ?c
+WHERE  {  
+  ?a ?b ?c 
+  filter ( regex(str(?a), "Fruit01")) 
+  filter isLiteral(?c) 
+  filter ( regex(str(?b), "FruitName")) 
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+}
+
+TO DISPLAY THE DETAILS OF FRUIT01 WITH THEIR VALUES
+SELECT ?x ?c
+WHERE  {  
+  ?a ?b ?c 
+  filter ( regex(str(?a), "Fruit01")) 
+  filter isLiteral(?c) 
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+}
+
+TO DISPLAY ALL THE NUTRIENT CONTENTS OF ALL FRIUTS,ARRANGED ACCORDING TO FRUIT NUMBER
+
+SELECT ?y ?x ?c
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?a), "Fruit")) 
+  filter isLiteral(?c)
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+}
+
+TO DISPLAY ALL THE DETAILS OF ALL FRUITS, ARRANGED ACCORDING TO FRUIT NUMBER
+
+SELECT ?x ?y ?z
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?a), "Fruit"))
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)  
+}
+
+
+TO REPLACE ONE SINGLET WITH ANOTHER SINGLET
+//THIS REPLACES ?Z WITH ?Y AS ?D
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?a), "Fruit"))
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (replace (?z, ?z, ?y) as ?d)
+}
+
+TO DISPLAY ALL DETAILS OF FRUITS AND COLORS
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Fruit"))||(regex(str(?a), "Color"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (replace (?z, ?z, ?y) as ?d)
+}
+
+TO CHECK IF THE COLORNAME IS RED, AND IF YES, REPLACE IT WITH YELLOW ELSE LEAVE IT AS IT IS
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( regex(str(?a), "Color")) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind( if(?z = "Red",replace (?z, ?z, "Yellow"),?z) as ?d )
+}
+
+TO REPLACE THE SINGLET HAVING "COLOR" WITH YELLOW
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if((regex(str(?z), "Color")) ,replace (?z, ?z, "Yellow"),?z) as ?d )
+}
+
+REPLACE COLOR01 IN ?Z WITH "RED"
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+          			?z)),
+      	?z)
+    	as ?d )
+}
+
+TO REPLACE COLOR01 IN ?Z WITH "RED" AND COLOR02 WITH "YELLOW"
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		?z)))),
+      ?z)        
+	  as ?d )
+}
+
+
+TO REPLACE ALL COLOR0X WITH COLORNAMES
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "White"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Pink"),
+              		(if
+        				(
+          					(regex(str(?z), "05")),
+              					replace (?z, ?z, "Brown"),
+              		(if
+        				(
+          					(regex(str(?z), "06")),
+              					replace (?z, ?z, "Blue"),
+              		(if
+        				(
+          					(regex(str(?z), "07")),
+              					replace (?z, ?z, "Orange"),
+              		(if
+        				(
+          					(regex(str(?z), "08")),
+              					replace (?z, ?z, "Green"),
+              		(if
+        				(
+          					(regex(str(?z), "09")),
+              					replace (?z, ?z, "Black"),
+              		(if
+        				(
+          					(regex(str(?z), "10")),
+              					replace (?z, ?z, "Purple"),
+              		?z)))))))))))))))))))),
+      ?z)        
+	  as ?d )
+}
+
+
+TO REPLACE COLORNAMES AND INNERLAYER
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "White"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Pink"),
+              		(if
+        				(
+          					(regex(str(?z), "05")),
+              					replace (?z, ?z, "Brown"),
+              		(if
+        				(
+          					(regex(str(?z), "06")),
+              					replace (?z, ?z, "Blue"),
+              		(if
+        				(
+          					(regex(str(?z), "07")),
+              					replace (?z, ?z, "Orange"),
+              		(if
+        				(
+          					(regex(str(?z), "08")),
+              					replace (?z, ?z, "Green"),
+              		(if
+        				(
+          					(regex(str(?z), "09")),
+              					replace (?z, ?z, "Black"),
+              		(if
+        				(
+          					(regex(str(?z), "10")),
+              					replace (?z, ?z, "Purple"),
+              		?z)))))))))))))))))))),
+      (if
+    		(
+      			(regex(str(?z), "Inner")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Crunchy"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Soft"),
+              		?z)))),
+          ?z)))        
+	  as ?d )
+}
+
+
+TO REPLACE COLORNAMES, INNERLAYER AND OUTERLAYER
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "White"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Pink"),
+              		(if
+        				(
+          					(regex(str(?z), "05")),
+              					replace (?z, ?z, "Brown"),
+              		(if
+        				(
+          					(regex(str(?z), "06")),
+              					replace (?z, ?z, "Blue"),
+              		(if
+        				(
+          					(regex(str(?z), "07")),
+              					replace (?z, ?z, "Orange"),
+              		(if
+        				(
+          					(regex(str(?z), "08")),
+              					replace (?z, ?z, "Green"),
+              		(if
+        				(
+          					(regex(str(?z), "09")),
+              					replace (?z, ?z, "Black"),
+              		(if
+        				(
+          					(regex(str(?z), "10")),
+              					replace (?z, ?z, "Purple"),
+              		?z)))))))))))))))))))),
+      (if
+    		(
+      			(regex(str(?z), "Inner")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Crunchy"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Soft"),
+              		?z)))),
+          (if
+    		(
+      			(regex(str(?z), "Outer")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Prickly"),
+          			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Ribbed"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "Smooth"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Furry"),
+              		?z)))))))),
+              ?z)))))        
+	  as ?d )
+}
+
+
+TO REPLACE FRUITNAME, INNERLAYER, OUTERLAYER, AND SEEDTYPE
+
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "White"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Pink"),
+              		(if
+        				(
+          					(regex(str(?z), "05")),
+              					replace (?z, ?z, "Brown"),
+              		(if
+        				(
+          					(regex(str(?z), "06")),
+              					replace (?z, ?z, "Blue"),
+              		(if
+        				(
+          					(regex(str(?z), "07")),
+              					replace (?z, ?z, "Orange"),
+              		(if
+        				(
+          					(regex(str(?z), "08")),
+              					replace (?z, ?z, "Green"),
+              		(if
+        				(
+          					(regex(str(?z), "09")),
+              					replace (?z, ?z, "Black"),
+              		(if
+        				(
+          					(regex(str(?z), "10")),
+              					replace (?z, ?z, "Purple"),
+              		?z)))))))))))))))))))),
+      (if
+    		(
+      			(regex(str(?z), "Inner")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Crunchy"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Soft"),
+              		?z)))),
+          (if
+    		(
+      			(regex(str(?z), "Outer")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Prickly"),
+          			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Ribbed"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "Smooth"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Furry"),
+              		?z)))))))),
+              (if
+    		(
+      			(regex(str(?z), "Seed")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Edible"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Not Edible"),
+              		?z)))),
+          ?z)))))))        
+	  as ?d )
+}
+
+
+FINAL QUERY
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xs: <http://www.w3.org/2001/XMLSchema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?x ?y ?z ?d
+WHERE  {  
+  ?a ?b ?c
+  filter ( (regex(str(?a), "Color"))||(regex(str(?a), "Fruit"))) 
+  filter (regex(str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#"))
+  bind (replace (str(?a), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?x)
+  bind (replace (str(?b), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?y)
+  bind (replace (str(?c), "http://www.semanticweb.org/mahe/ontologies/2016/9/untitled-ontology-8#", "") as ?z)
+  bind (if
+    		(
+      			(regex(str(?z), "Color")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Red"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Yellow"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "White"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Pink"),
+              		(if
+        				(
+          					(regex(str(?z), "05")),
+              					replace (?z, ?z, "Brown"),
+              		(if
+        				(
+          					(regex(str(?z), "06")),
+              					replace (?z, ?z, "Blue"),
+              		(if
+        				(
+          					(regex(str(?z), "07")),
+              					replace (?z, ?z, "Orange"),
+              		(if
+        				(
+          					(regex(str(?z), "08")),
+              					replace (?z, ?z, "Green"),
+              		(if
+        				(
+          					(regex(str(?z), "09")),
+              					replace (?z, ?z, "Black"),
+              		(if
+        				(
+          					(regex(str(?z), "10")),
+              					replace (?z, ?z, "Purple"),
+              		?z)))))))))))))))))))),
+      (if
+    		(
+      			(regex(str(?z), "Inner")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Crunchy"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Soft"),
+              		?z)))),
+          (if
+    		(
+      			(regex(str(?z), "Outer")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Prickly"),
+          			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Ribbed"),
+              		(if
+        				(
+          					(regex(str(?z), "03")),
+              					replace (?z, ?z, "Smooth"),
+              		(if
+        				(
+          					(regex(str(?z), "04")),
+              					replace (?z, ?z, "Furry"),
+              		?z)))))))),
+              (if
+    		(
+      			(regex(str(?z), "Seed")) ,
+      				(if
+        				(
+          					(regex(str(?z), "01")),
+              					replace (?z, ?z, "Edible"),
+        			(if
+        				(
+          					(regex(str(?z), "02")),
+              					replace (?z, ?z, "Not Edible"),
+              		?z)))),
+          ?z)))))))        
+	  as ?d )
+}
